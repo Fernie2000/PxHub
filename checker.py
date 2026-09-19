@@ -39,7 +39,7 @@ async def main():
                 continue
 
     # تست حداکثر ۵۰۰ پروکسی اول برای اتمام سریع زیر ۱ دقیقه
-    test_list = list(raw_proxies)[:500]
+    test_list = list(raw_proxies)[:150]
 
     # همزمانی بالا (۱۰۰ همزمان)
     semaphore = asyncio.Semaphore(100)
