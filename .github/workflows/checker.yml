@@ -24,7 +24,7 @@ jobs:
         run: pip install httpx[socks]
 
       - name: Run Proxy Checker
-        run: python checker.py
+        run: python -u checker.py
 
       - name: Commit and Push
         run: |
