@@ -1,6 +1,8 @@
 name: Iran Proxy Updater
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 permissions:
@@ -29,8 +31,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add iran_proxies.txt
-          if ! git diff --staged --quiet; then
-            git commit -m "Update proxies"
-            git pull --rebase origin main
-            git push origin main
-          fi
+          git commit -m "Auto-update Iran proxies" || exit 0
+          git pull --rebase origin main
+          git push origin main
