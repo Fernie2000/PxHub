@@ -8,9 +8,8 @@ SOURCES = [
     "https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt"
 ]
 
-TARGET_TEST = "https://api.nobitex.ir/market/stats"
-GEO_API = "http://ip-api.com/json/{ip}?fields=countryCode"
-
+TARGET_TEST = "https://apiv2.nobitex.ir/market/stats"
+GEO_API = "https://ipapi.co/{ip}/country/"
 active_iran_proxies = []
 
 async def test_proxy(proxy_url):
