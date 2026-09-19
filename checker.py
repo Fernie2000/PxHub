@@ -4,6 +4,7 @@ import httpx
 # فقط یک سورس سبک
 SOURCES = [
     "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http,socks5&timeout=4000&country=IR&ssl=all&anonymity=all"
+    "https://raw.githubusercontent.com/Fernie2000/PxHub/refs/heads/main/ls.txt"
 ]
 
 TARGET_TEST = "https://apiv2.nobitex.ir/market/stats"
