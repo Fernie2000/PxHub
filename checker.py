@@ -3,7 +3,7 @@ import httpx
 
 # فقط یک سورس سبک
 SOURCES = [
-    "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt"
+    "https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http,socks5&timeout=4000&country=IR&ssl=all&anonymity=all"
 ]
 
 TARGET_TEST = "https://apiv2.nobitex.ir/market/stats"
